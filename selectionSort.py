@@ -11,13 +11,12 @@ print(unsortedRandomList)
 
 def selection_sort(pList):
     print(f'{pList} Start of function')
-    n = len(pList)
-    tempValue = 0
-    for i in range(n):
-        print(f'{pList} Outside i={i} ')
+    #n = len(pList)
+    for i in range(len(pList)):
+        print(f'{pList} Outside i={i}')
         # Find the minimum element in remaining unsorted array
         min_idx = i
-        for j in range(i + 1, n):
+        for j in range(i + 1, len(pList)):
             print(f'{pList} Inside i={i} j={j}')
             if pList[j] < pList[min_idx]:
                 min_idx = j
